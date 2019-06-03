@@ -1,0 +1,18 @@
+{
+  "name": "codejam-dom-palette",
+  "version": "0.1.0",
+  "description": "JS training tasks",
+  "author": "suzik86",
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "scripts": {
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rolling-scopes-school/suzik86-2019Q1"
+  }
+}

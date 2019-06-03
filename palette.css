@@ -1,0 +1,64 @@
+.container-fluid {
+    margin-top: 50px; 
+}
+
+.container  .col-md-2{
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    background-color: gray;
+}
+
+.palette .btn {
+    text-align: left;
+}
+
+.palette .btn .badge {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    padding-top: 10px;
+    top: 5px;
+    margin-right: 6px;
+}
+
+[type=radio]:checked, [type=radio]:not(:checked) {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#canvas {
+    border: 1px solid black; 
+}
+
+#frames {
+    width: 100%;     
+    overflow: auto;
+    list-style: none;
+}
+
+#frames li {
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black; 
+    height: 150px;
+}
+
+#frames li.active {
+    border:1px solid red;
+}
+
+#preview { 
+    border: 1px solid black;
+    width:256px; 
+}
+
+#add-frame {
+    margin-left: 60px;
+    color: white;
+    background-color: #82b1ff;
+    
+}
+

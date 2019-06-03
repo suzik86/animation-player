@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pallete</title>
+    <link rel="stylesheet" href="palette.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card" id="tools">
+                    <div class="card-body">
+                        <div class="btn-group-vertical">
+                                <button class="btn btn-light-blue form-check-label" data-tool="paint" >
+                                        <i class="fas fa-fill-drip"></i> Paint bucket
+                                </button>
+                                <button class="btn btn-light-blue form-check-label" data-tool="picker" >
+                                        <i class="fas fa-eye-dropper"></i> Choose color
+                                </button>
+                                <button class="btn btn-light-blue form-check-label" data-tool="move" >
+                                        <i class="fas fa-arrows-alt"></i> Move
+                                </button>
+                                <button class="btn btn-light-blue form-check-label" data-tool="transform" >
+                                        <i class="fas fa-exchange-alt"></i> Transform
+                                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="palette card" id="pallete">
+                    <div class="card-body">
+                        <div class="btn-group-vertical">
+                            <button class="btn btn-light-blue form-check-label" data-color="" id="current-color">
+                                    <span class="badge"> </span> Current color
+                            </button>
+                            <button class="btn btn-light-blue form-check-label" data-color="" id="prev-color">
+                                    <span class="badge"> </span>Prev color
+                            </button>
+                            <button class="btn btn-light-blue form-check-label" data-color="red">
+                                    <span class="badge" style="background-color: red"> </span>Red
+                            </button>
+                            <button class="btn btn-light-blue form-check-label" data-color="blue">
+                                    <span class="badge" style="background-color: blue"> </span>Blue
+                            </button>
+                            <button class="btn btn-light-blue form-check-label" data-color="green">
+                                    <span class="badge" style="background-color: green"> </span>Green
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <canvas id="canvas" width="800" height="600"></canvas>
+            </div>
+            <div class="col-md-2">
+                <canvas id="preview" width="800" height="600"></canvas>
+                <input type="range" id="speed" value="1" min="1" max="24">
+                <button id="play">Play</button>
+                <button id="fullscreen">Fullscreen</button>
+            </div>            
+        </div>
+        <div class="row">
+            <ul class="frames" id="frames"></div>
+            <button id="add-frame">Add Frame</button>
+        </div>
+    </div>   
+
+    
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js">
+    </script>
+
+    <script type="text/javascript" src="./palette.js"></script>
+</body>
+
+</html>
